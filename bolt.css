@@ -13,3 +13,6 @@ li{
  	border: 0px;
  }
 
+ul li{
+	display: block;
+}
