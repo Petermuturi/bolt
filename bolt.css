@@ -5,3 +5,12 @@ li{
 	list-style: none;
 	display: inline;
 }
+ 
+ a.sign{
+ 	color:#408FC2; border:solid 1px; padding:6px; padding-left:12px;padding-right:12px;font-size:12px;
+ }
+ a.sign:hover{
+ 	background-color:#408FC2;
+ 	color: white; 
+ 	border: 0px;
+ }
