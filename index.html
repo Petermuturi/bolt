@@ -4,7 +4,11 @@
 <link rel="stylesheet" type="text/css" href="bolt.css"/>
 <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
 	<title>Bolt_network</title>
-
+   <link rel="icon" type="image/svg" href="img/logo.svg"  />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+		<script src="js/modernizr.custom.js"></script>
 </head>
 <body style="background-color: rgba(0,0,0,9);">
 <div style="background-color: rgba(0,0,0,9);">	
@@ -24,7 +28,7 @@
   
 
   <div class="row" style="padding-top:34px;padding-bottom:34px;">
-  <div class="col s4">
+  <div class="col s4" style="color:black">
   	move
   </div>
     <div class="input-field col s3">
@@ -40,12 +44,31 @@
 <div style="padding-top:16px;background-image: url(img/diagmonds_@2X.png);padding-bottom:12px;">
 	<p style="font-size:20px;color:#408FC2;text-align:center;padding-bottom:16px;">A world of movies at your fingertips.<br/>
 	<span style="font-size:10px;color:white;text-align:center;">Choose from the latest titles, with new movies added every day.</span></p>
-
+     <div class="row">
+     <div class="col s3">.</div>
+     <div class="col s9">
 	<p style="text-align:center;">
-	<img style="padding-right:4px;height:235px;width:420px;" src="img/the-avengers.jpg">
+
+						<div class="morph-button morph-button-modal morph-button-modal-4 morph-button-fixed"style="padding-right:4px;height:235px;width:420px;">
+							<button type="button"><img style="padding-right:4px;height:235px;width:420px;" src="img/the-avengers.jpg"></button>
+							<div class="morph-content">
+								<span class="morph-clone">01:43</span>
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close">Close the dialog</span>
+										<div class="video-mockup"></div>
+										<div class="controls">
+											<span class="icon icon-pause">Pause</span>
+											<span class="time">00:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
 	<img style="padding-right:4px;height:235px; width:238px;" src="img/harry-potter.jpg">
 	</p>
-
+</div>
 	<p style="text-align:center;">
 	<img style="padding-right:4px;height:220px; width:220px;" src="img/frozen.jpg">
 	<img style="padding-right:4px;height:220px; width:220px;" src="img/iron-man.jpg">
@@ -62,6 +85,8 @@
 	<img style="padding-right:4px;height:220px; width:220px;" src="img/pirates-of-the-caribbean.jpg">
 	<img style="padding-right:4px;height:220px; width:220px;" src="img/toy-story-3.jpg">
 	</p>
+</div>
+</div>
 </div>
   	<div style="background-image:url(img/feature.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;font-size:20px;color:#408FC2;text-align:center;padding-bottom:86px;padding-top:86px;">Availble Everywhere.<br/>
   	<span style="font-size:10px;color:white;text-align:center;">Start watching on one device, and pick up where you left off on another device.</span></div>
@@ -95,7 +120,15 @@
 	</div>
 </footer>
 
-
+<script src="js/classie.js"></script>
+		<script src="js/uiMorphingButton_fixed.js"></script>
+		<script>
+			(function() {
+				new UIMorphingButton( document.querySelector( '.morph-button' ), {
+					closeEl : '.icon-close'
+				} );
+			})();
+		</script>
 <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 </html>
