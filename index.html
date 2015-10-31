@@ -2,16 +2,27 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="bolt.css"/>
-<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>Bolt_network</title>
    <link rel="icon" type="image/svg" href="img/logo.svg"  />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/content.css" />
 		<script src="js/modernizr.custom.js"></script>
+	
 </head>
 <body style="background-color: rgba(0,0,0,9);">
-<div style="background-color: rgba(0,0,0,9);">	
+<div style="background-color: rgba(0,0,0,9);">
 	<div class="row" style="padding-top:9px;">
 	<div class="col s6" style="text-align:center;">	
 		<li><a href="#"><img src="img/logo.svg" style="height:80px; width:130px;"></a></li>
@@ -44,48 +55,37 @@
 <div style="padding-top:16px;background-image: url(img/diagmonds_@2X.png);padding-bottom:12px;">
 	<p style="font-size:20px;color:#408FC2;text-align:center;padding-bottom:16px;">A world of movies at your fingertips.<br/>
 	<span style="font-size:13px;color:white;text-align:center;">Choose from the latest titles, with new movies added every day.</span></p>
-     <div class="row">
-     <div class="col s3">.</div>
-     <div class="col s9">
-	<p style="text-align:center;">
 
-						<div class="morph-button morph-button-modal morph-button-modal-4 morph-button-fixed"style="padding-right:4px;height:235px;width:420px;">
-							<button type="button"><img style="padding-right:4px;height:235px;width:420px;" src="img/the-avengers.jpg"></button>
-							<div class="morph-content">
-								<span class="morph-clone">01:43</span>
-								<div>
-									<div class="content-style-video">
-										<span class="icon icon-close">Close the dialog</span>
-										<div class="video-mockup"></div>
-										<div class="controls">
-											<span class="icon icon-pause">Pause</span>
-											<span class="time">00:00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-	
-	<img style="padding-right:4px;height:235px; width:238px;" src="img/harry-potter.jpg">
-	</p>
+<div class="row">
+<div class="col s3">.</div>
+<button data-target="modal1" class="modal-trigger"><img src="img/frozen.jpg" style="height:200px; width:200px;"></button>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <button data-target="modal2" class="modal-trigger"><img src="img/the-avengers.jpg" style="height:200px; width:400px;"></button>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
 </div>
-	<p style="text-align:center;">
-	<img style="padding-right:4px;height:220px; width:220px;" src="img/frozen.jpg">
-	<img style="padding-right:4px;height:220px; width:220px;" src="img/iron-man.jpg">
-	<img style="padding-right:4px;height:220px; width:220px;" src="img/transformers.jpg">
-	</p>
 
-	<p style="text-align:center;">
-	<img style="padding-right:4px;height:235px; width:238px;" src="img/the-lord-of-the-rings.jpg">
-	<img style="padding-right:4px;height:235px;width:422px;" src="img/skyfall.jpg">
-	</p>
 
-<p style="text-align:center;">
-	<img style="padding-right:4px;height:220px; width:220px;" src="img/the-dark-knight.jpg">
-	<img style="padding-right:4px;height:220px; width:220px;" src="img/pirates-of-the-caribbean.jpg">
-	<img style="padding-right:4px;height:220px; width:220px;" src="img/toy-story-3.jpg">
-	</p>
-</div>
+
+
 </div>
 </div>
   	<div style="background-image:url(img/feature.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;font-size:20px;color:#408FC2;text-align:center;padding-bottom:86px;padding-top:86px;">Availble Everywhere.<br/>
@@ -122,16 +122,12 @@
 	 <p style="color:white; padding-bottom:1px; font-size:12px;padding-left:20px;padding-right:20px;">&#169;Copyright 2015<span style="float:right;">
   Designed By PeterMuturi. All Rights Reserved.</span></p>
 </footer>
-
-<script src="js/classie.js"></script>
-		<script src="js/uiMorphingButton_fixed.js"></script>
-		<script>
-			(function() {
-				new UIMorphingButton( document.querySelector( '.morph-button' ), {
-					closeEl : '.icon-close'
-				} );
-			})();
+	<script type="text/javascript">
+         
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+$('.modal-trigger').leanModal();  });
+          
 		</script>
-<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 </html>
