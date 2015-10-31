@@ -16,3 +16,6 @@ li{
 ul li{
 	display: block;
 }
+.nl{
+	opacity: 0;
+}
