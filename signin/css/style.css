@@ -73,7 +73,11 @@ header[role=banner]::after {
   display: table;
   clear: both;
 }
-@media only screen and (min-width: 768px) {
+  .main-nav li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+/*@media only screen and (min-width: 768px) {
   header[role=banner] {
     height: 80px;
   }
@@ -169,7 +173,7 @@ header[role=banner]::after {
     border: none;
   }
 }
-
+*/
 /* -------------------------------- 
 
 xsigin/signup popup 

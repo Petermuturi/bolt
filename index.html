@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>Bolt_network</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
    <link rel="icon" type="image/svg" href="img/logo.svg"  />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -21,25 +23,24 @@
 
       <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="signin/css/reset.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="signin/css/style.css"> <!-- Gem style -->
   <script src="signin/js/modernizr.js"></script>
 	
 </head>
 <body style="background-color: rgba(0,0,0,9);">
 <div style="background-color: rgba(0,0,0,9);">
-	<div class="row" style="padding-top:9px;">
+	<div class="row">
 	<div class="col s6" style="text-align:center;">	
 		<li><a href="#"><img src="img/logo.svg" style="height:80px; width:130px;"></a></li>
 	</div>	
-	<div class="col s6" style="text-align:center;padding-top:4px;">
-     <nav class="main-nav">
+	<div class="col s6" style="text-align:center;padding-top:24px;">
+     <div class="main-nav">
       <ul>
         <!-- inser more links here -->
         <li><a style="color:white;font-size:12px;" class="cd-signin" href="#0">Sign in</a></li>
         <li><a class="cd-signup sign" href="#0">Sign up</a></li>
       </ul>
-    </nav>
+    </div>
 	</div>	
 	</div>
      
@@ -133,11 +134,11 @@
   </div> <!-- cd-user-modal -->
 	<p style="font-size:45px; font-weight:300; color:white;text-align:center;">Watch your favorite movies, instantly.</p>
         
-<div class="row">
+<div class="row" style="padding-top:9px;">
 <div class="col s8">.</div>
    <!-- Modal Trigger -->
    <div class="col s4">
-  <button data-target="modal11" style="color:#408FC2;background:none;border:1px solid;padding:5px;" class="modal-trigger sign">Learn More</button>
+  <button data-target="modal11" style="color:#408FC2;background:none;border:1px solid;font-size:12px;padding:5px;" class="modal-trigger sign">Learn More</button>
 
   <!-- Modal Structure -->
   <div id="modal11" class="modal bottom-sheet">
@@ -177,9 +178,13 @@
 <button data-target="modal1" class="modal-trigger"><img src="img/frozen.jpg" style="height:200px; width:200px;"></button>
 
   <div id="modal1" class="modal">
-    <div class="modal-content">
+    <div class="row modal-content">
       <h4>Frozen</h4>
-   <iframe width="690" height="315" src="https://www.youtube.com/embed/3EKpEVsyUXM?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+      <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+         <iframe width="690" height="315" src="https://www.youtube.com/embed/3EKpEVsyUXM?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+         <div>
+           <p>Comments</p>
+         </div>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -190,7 +195,7 @@
   <div id="modal2" class="modal">
     <div class="modal-content">
       <h4>Avengers: Age of Ultron</h4>
-    <iframe width="690" height="315" src="https://www.youtube.com/embed/rD8lWtcgeyg?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/rD8lWtcgeyg?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -205,7 +210,7 @@
   <div id="modal3" class="modal">
     <div class="modal-content">
       <h4>Iron Man 3</h4>
-  <iframe width="690" height="315" src="https://www.youtube.com/embed/Ke1Y3P9D0Bc?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+  <iframe width="500" height="315" src="https://www.youtube.com/embed/Ke1Y3P9D0Bc?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -216,7 +221,7 @@
   <div id="modal4" class="modal">
     <div class="modal-content">
       <h4>The Dark Knight Rises</h4>
-    <iframe width="690" height="315" src="https://www.youtube.com/embed/g8evyE9TuYk?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/g8evyE9TuYk?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -227,7 +232,7 @@
   <div id="modal5" class="modal">
     <div class="modal-content">
       <h4>Transformers:Dark of the moon</h4>
-     <iframe width="690" height="315" src="https://www.youtube.com/embed/kHRf01Gjosk?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+     <iframe width="500" height="315" src="https://www.youtube.com/embed/kHRf01Gjosk?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -242,7 +247,7 @@
   <div id="modal6" class="modal">
     <div class="modal-content">
       <h4>Skyfall</h4>
-        <iframe width="690" height="315" src="https://www.youtube.com/embed/6kw1UVovByw?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/6kw1UVovByw?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -254,7 +259,7 @@
   <div id="modal7" class="modal">
     <div class="modal-content">
       <h4>Pirates Of the Caribbean</h4>
-      <iframe width="690" height="315" src="https://www.youtube.com/embed/naQr0uTrH_s?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/naQr0uTrH_s?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -269,7 +274,7 @@
   <div id="modal8" class="modal">
     <div class="modal-content">
       <h4>Harry Potter</h4>
-     <iframe width="690" height="315" src="https://www.youtube.com/embed/PUXpgitNeOU?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+     <iframe width="500" height="315" src="https://www.youtube.com/embed/PUXpgitNeOU?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -280,7 +285,7 @@
   <div id="modal9" class="modal">
     <div class="modal-content">
       <h4>Lord of the rings</h4>
-     <iframe width="690" height="315" src="https://www.youtube.com/embed/r5X-hFf6Bwo?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+     <iframe width="500" height="315" src="https://www.youtube.com/embed/r5X-hFf6Bwo?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -291,7 +296,7 @@
   <div id="modal10" class="modal">
     <div class="modal-content">
       <h4>Toy story 3</h4>
-    <iframe width="690" height="315" src="https://www.youtube.com/embed/ZZv1vki4ou4?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/ZZv1vki4ou4?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -346,6 +351,13 @@
 $('.modal-trigger').leanModal();  });
           
 		</script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+        </script>
     <script src="signin/js/main.js"></script>
 </body>
 </html>
