@@ -7,11 +7,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
-
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>Bolt_network</title>
    <link rel="icon" type="image/svg" href="img/logo.svg"  />
@@ -19,6 +18,12 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/content.css" />
 		<script src="js/modernizr.custom.js"></script>
+
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="signin/css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="signin/css/style.css"> <!-- Gem style -->
+  <script src="signin/js/modernizr.js"></script>
 	
 </head>
 <body style="background-color: rgba(0,0,0,9);">
@@ -27,12 +32,105 @@
 	<div class="col s6" style="text-align:center;">	
 		<li><a href="#"><img src="img/logo.svg" style="height:80px; width:130px;"></a></li>
 	</div>	
-	<div class="col s6" style="text-align:center;padding-top:24px;">
-		<li style="padding-right:8px;"><a style="color:white;font-size:12px;" href="#">Log in</a></li>
-		<li ><a class="sign" href="#">Sign up</a></li>
+	<div class="col s6" style="text-align:center;padding-top:4px;">
+     <nav class="main-nav">
+      <ul>
+        <!-- inser more links here -->
+        <li><a style="color:white;font-size:12px;" class="cd-signin" href="#0">Sign in</a></li>
+        <li><a class="cd-signup sign" href="#0">Sign up</a></li>
+      </ul>
+    </nav>
 	</div>	
 	</div>
+     
+  <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+      <ul class="cd-switcher">
+        <li><a href="#0">Sign in</a></li>
+        <li><a href="#0">New account</a></li>
+      </ul>
 
+      <div id="cd-login"> <!-- log in form -->
+        <form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signin-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signin-password">Password</label>
+            <input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input type="checkbox" id="remember-me" checked>
+            <label for="remember-me">Remember me</label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width" type="submit" value="Login">
+          </p>
+        </form>
+        
+        <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-login -->
+
+      <div id="cd-signup"> <!-- sign up form -->
+        <form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-username" for="signup-username">Username</label>
+            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signup-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signup-password">Password</label>
+            <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input type="checkbox" id="accept-terms">
+            <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Create account">
+          </p>
+        </form>
+
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-signup -->
+
+      <div id="cd-reset-password"> <!-- reset password form -->
+        <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+        <form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="reset-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Reset password">
+          </p>
+        </form>
+
+        <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+      </div> <!-- cd-reset-password -->
+      <a href="#0" class="cd-close-form">Close</a>
+    </div> <!-- cd-user-modal-container -->
+  </div> <!-- cd-user-modal -->
 	<p style="font-size:45px; font-weight:300; color:white;text-align:center;">Watch your favorite movies, instantly.</p>
         
 <div class="row">
@@ -240,6 +338,7 @@
 	 <p style="color:white; padding-bottom:1px; font-size:12px;padding-left:20px;padding-right:20px;">&#169;Copyright 2015<span style="float:right;">
   Designed By PeterMuturi. All Rights Reserved.</span></p>
 </footer>
+
 	<script type="text/javascript">
          
   $(document).ready(function(){
@@ -247,5 +346,6 @@
 $('.modal-trigger').leanModal();  });
           
 		</script>
+    <script src="signin/js/main.js"></script>
 </body>
 </html>
