@@ -41,8 +41,9 @@
      <div class="main-nav">
       <ul>
         <!-- inser more links here -->
-        <li><a style="color:white;font-size:12px;" class="cd-signin" href="#0">Sign in</a></li>
-        <li><a class="cd-signup sign" href="#0">Sign up</a></li>
+        <li><a style="color:white;font-size:12px;" id="in" class="cd-signin" href="#0">Sign in</a></li>
+        <li><a class="cd-signup sign" id="up" href="#0">Sign up</a></li>
+         <li><a class=" sign " id="logout" href="#0">Logout</a></li>
       </ul>
     </div>
 	</div>	
@@ -55,7 +56,7 @@
         <li><a href="#0">New account</a></li>
       </ul>
 
-      <div id="cd-login"> <!-- log in form -->
+      <div id="cd-logi"> <!-- log in form -->
            <form class="cd-form" id="login">
         <p class="fieldset">
             <label class="image-replace cd-username" for="login-username">Username</label>
@@ -81,7 +82,7 @@
         <!-- <a href="#0" class="cd-close-form">Close</a> -->
       </div> <!-- cd-login -->
 
-       <div> <!-- sign up form -->
+       <div id="cd-signup"> <!-- sign up form -->
         <form class="cd-form" id="signup" name="signup">
           <p class="fieldset">
             <label class="image-replace cd-username" for="signup-username">Username</label>
@@ -139,17 +140,30 @@
 
   <!-- Modal Structure -->
   <div id="modal11" class="modal bottom-sheet">
-    <div class="modal-content">
+    <div class="modal-content row" style="background:rgba(255,255,255,0.6);">
     <h4 style="text-align:center;">Bolt Network</h4>
+    <div class="col s5">
+      <img src="img/learn.jpg" height="300px" width="400px;" style="margin-top:-100px;">
+    </div>
+    <div class="col s7">
       <p style="color:black;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
     </div>
   </div>
       
@@ -170,7 +184,22 @@
       <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
          <iframe width="690" height="315" src="https://www.youtube.com/embed/3EKpEVsyUXM?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
          <div>
-           <p>Comments</p>
+           <h5>Comments</h5>
+           <form id="commentFreeze" class="row">
+           <div class="col s8">
+             <p> <input class="with-gap" name="group1" type="radio" id="likef"  />
+      <label for="likef"><i class="fa fa-thumbs-o-up"></i> Like</label> 
+       <input class="with-gap" name="group1" type="radio" id="dislikef"  />
+      <label for="dislikef"><i class="fa fa-thumbs-o-down"></i> Dislike</label></p>
+      <p>   <label for="textareaf"><i class="fa fa-comment-o"></i> Comment</label>
+       <textarea id="textareaf" placeholder="Type your comment" type="text" class="materialize-textarea"></textarea>
+           </p>
+           <p><input type="submit" class="sign" id="submitf"></p>
+           </div>
+           <div id="frzcom">
+             
+           </div>
+           </form>
          </div>
     </div>
     <div class="modal-footer">
@@ -182,7 +211,8 @@
   <div id="modal2" class="modal">
     <div class="modal-content">
       <h4>Avengers: Age of Ultron</h4>
-    <iframe width="500" height="315" src="https://www.youtube.com/embed/rD8lWtcgeyg?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+    <iframe width="690" height="315" src="https://www.youtube.com/embed/rD8lWtcgeyg?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -197,7 +227,8 @@
   <div id="modal3" class="modal">
     <div class="modal-content">
       <h4>Iron Man 3</h4>
-  <iframe width="500" height="315" src="https://www.youtube.com/embed/Ke1Y3P9D0Bc?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+  <iframe width="690" height="315" src="https://www.youtube.com/embed/Ke1Y3P9D0Bc?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -208,7 +239,8 @@
   <div id="modal4" class="modal">
     <div class="modal-content">
       <h4>The Dark Knight Rises</h4>
-    <iframe width="500" height="315" src="https://www.youtube.com/embed/g8evyE9TuYk?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+    <iframe width="690" height="315" src="https://www.youtube.com/embed/g8evyE9TuYk?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -219,7 +251,8 @@
   <div id="modal5" class="modal">
     <div class="modal-content">
       <h4>Transformers:Dark of the moon</h4>
-     <iframe width="500" height="315" src="https://www.youtube.com/embed/kHRf01Gjosk?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+     <iframe width="690" height="315" src="https://www.youtube.com/embed/kHRf01Gjosk?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -234,7 +267,8 @@
   <div id="modal6" class="modal">
     <div class="modal-content">
       <h4>Skyfall</h4>
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/6kw1UVovByw?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+        <iframe width="690" height="315" src="https://www.youtube.com/embed/6kw1UVovByw?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -246,7 +280,8 @@
   <div id="modal7" class="modal">
     <div class="modal-content">
       <h4>Pirates Of the Caribbean</h4>
-      <iframe width="500" height="315" src="https://www.youtube.com/embed/naQr0uTrH_s?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+      <iframe width="690" height="315" src="https://www.youtube.com/embed/naQr0uTrH_s?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -261,7 +296,8 @@
   <div id="modal8" class="modal">
     <div class="modal-content">
       <h4>Harry Potter</h4>
-     <iframe width="500" height="315" src="https://www.youtube.com/embed/PUXpgitNeOU?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+     <iframe width="690" height="315" src="https://www.youtube.com/embed/PUXpgitNeOU?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -272,7 +308,8 @@
   <div id="modal9" class="modal">
     <div class="modal-content">
       <h4>Lord of the rings</h4>
-     <iframe width="500" height="315" src="https://www.youtube.com/embed/r5X-hFf6Bwo?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+     <iframe width="690" height="315" src="https://www.youtube.com/embed/r5X-hFf6Bwo?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -283,7 +320,8 @@
   <div id="modal10" class="modal">
     <div class="modal-content">
       <h4>Toy story 3</h4>
-    <iframe width="500" height="315" src="https://www.youtube.com/embed/ZZv1vki4ou4?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+    <iframe width="690" height="315" src="https://www.youtube.com/embed/ZZv1vki4ou4?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -338,13 +376,7 @@
 $('.modal-trigger').leanModal();  });
           
 		</script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-    $('.collapsible').collapsible({
-      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
-  });
-        </script>
+   
     <script src="signin/js/main.js"></script>
 </body>
 </html>

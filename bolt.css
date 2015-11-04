@@ -44,7 +44,7 @@ video {
   img{width:70%;} 
 }
 @media screen and (max-device-width: 800px) {
-  html { background: url(bg/bg.jpg) #000 no-repeat center center fixed; }
+  html { background: url(bg/bg.jpg) no-repeat center center fixed; }
   #bgvid { background-image: url(bg/bg.jpg);display: none;background-size: cover;
   background-position: center; background-repeat: no-repeat; }
 }
