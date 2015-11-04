@@ -22,3 +22,29 @@ ul li{
 h4{
 	color: black;
 }
+
+video { 
+	margin-top: -100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('bg/bg.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+
+@media screen and (max-width: 500px) { 
+  img{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(bg/bg.jpg) #000 no-repeat center center fixed; }
+  #bgvid { background-image: url(bg/bg.jpg);display: none;background-size: cover;
+  background-position: center; background-repeat: no-repeat; }
+}

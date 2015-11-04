@@ -3,8 +3,8 @@
 <head>
 <link rel="stylesheet" type="text/css" href="bolt.css"/>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js";></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
 <!-- Compiled and minified JavaScript -->
@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>Bolt_network</title>
-   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
    <link rel="icon" type="image/svg" href="img/logo.svg"  />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -25,10 +24,15 @@
 
   <link rel="stylesheet" href="signin/css/style.css"> <!-- Gem style -->
   <script src="signin/js/modernizr.js"></script>
-	
 </head>
-<body style="background-color: rgba(0,0,0,9);">
-<div style="background-color: rgba(0,0,0,9);">
+<body style="background-color: rgba(0,0,0,5);">
+
+<video autoplay  poster="bg/bg.jpg" id="bgvid" loop muted>
+ <source src="bg/clip.webm" type="video/webm">
+        <source src="bg/clip.mp4" type="video/mp4">
+        <source src="bg/clip.ogv" type="video/ogg">
+  </video>
+  <div style="background:rgba(0,0,0,0.8);padding-bottom:1px;height:500px;" id="polina">
 	<div class="row">
 	<div class="col s6" style="text-align:center;">	
 		<li><a href="#"><img src="img/logo.svg" style="height:80px; width:130px;"></a></li>
@@ -52,16 +56,14 @@
       </ul>
 
       <div id="cd-login"> <!-- log in form -->
-        <form class="cd-form">
-          <p class="fieldset">
-            <label class="image-replace cd-email" for="signin-email">E-mail</label>
-            <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
-            <span class="cd-error-message">Error message here!</span>
-          </p>
+           <form class="cd-form" id="login">
+        <p class="fieldset">
+            <label class="image-replace cd-username" for="login-username">Username</label>
+            <input class="full-width has-padding has-border" id="login-username" name="login-username" type="text" placeholder="Username"></p>
 
           <p class="fieldset">
-            <label class="image-replace cd-password" for="signin-password">Password</label>
-            <input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+            <label class="image-replace cd-password" for="login-password">Password</label>
+            <input class="full-width has-padding has-border" id="login-password" name="login-password" type="password"  placeholder="Password">
             <span class="cd-error-message">Error message here!</span>
           </p>
 
@@ -79,33 +81,30 @@
         <!-- <a href="#0" class="cd-close-form">Close</a> -->
       </div> <!-- cd-login -->
 
-      <div id="cd-signup"> <!-- sign up form -->
-        <form class="cd-form">
+       <div> <!-- sign up form -->
+        <form class="cd-form" id="signup" name="signup">
           <p class="fieldset">
             <label class="image-replace cd-username" for="signup-username">Username</label>
-            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
-            <span class="cd-error-message">Error message here!</span>
-          </p>
+            <input class="full-width has-padding has-border" id="signup-username" name="signup-username" type="text" placeholder="Username"></p>
 
           <p class="fieldset">
             <label class="image-replace cd-email" for="signup-email">E-mail</label>
-            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-            <span class="cd-error-message">Error message here!</span>
+            <input class="full-width has-padding has-border" id="signup-email" name="signup-email" type="email" placeholder="E-mail">
           </p>
 
           <p class="fieldset">
-            <label class="image-replace cd-password" for="signup-password">Password</label>
-            <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
-            <span class="cd-error-message">Error message here!</span>
+            <label class="image-replace cd-password" for="password">Password</label>
+            <input class="full-width has-padding has-border" id="signup-password" name="signup-password" type="password"  placeholder="Password">
+<!--             <span class="cd-error-message">Error message here!</span> -->
           </p>
 
           <p class="fieldset">
-            <input type="checkbox" id="accept-terms">
+            <input type="checkbox" name="accept-terms" id="accept-terms">
             <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
           </p>
 
           <p class="fieldset">
-            <input class="full-width has-padding" type="submit" value="Create account">
+            <input class="full-width has-padding" id="signup-submit" type="submit" value="Create account">
           </p>
         </form>
 
@@ -132,12 +131,10 @@
       <a href="#0" class="cd-close-form">Close</a>
     </div> <!-- cd-user-modal-container -->
   </div> <!-- cd-user-modal -->
-	<p style="font-size:45px; font-weight:300; color:white;text-align:center;">Watch your favorite movies, instantly.</p>
+	<p style="font-size:45px; font-weight:300; color:white;text-align:center;">Get your favorite movies, instantly.</p>
         
-<div class="row" style="padding-top:9px;">
-<div class="col s8">.</div>
-   <!-- Modal Trigger -->
-   <div class="col s4">
+<div style="text-align:center;padding-bottom:240px;">
+
   <button data-target="modal11" style="color:#408FC2;background:none;border:1px solid;font-size:12px;padding:5px;" class="modal-trigger sign">Learn More</button>
 
   <!-- Modal Structure -->
@@ -152,21 +149,11 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">close</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
     </div>
   </div>
-  </div>
-    </div>      
+      
 
-  <div class="row" style="padding-top:34px;padding-bottom:34px;">
-  <div class="col s4" style="color:black">
-  	move
-  </div>
-    <div class="input-field col s3 sign">
-      <input  style="color:white;" id="movie" type="text" class="quicksearch">
-      <label class="active" for="movie">Browse For Collection</label>
-    </div>
-  </div>
 </div>
 <!-- End of first div -->
 <div style="padding-top:16px;background-image: url(img/diagmonds_@2X.png);padding-bottom:12px;">
@@ -306,13 +293,13 @@
 
 </div>
 
-
+<footer style="background:black;">
   	<div class="row" style="background-image:url(img/feature.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;font-size:20px;color:#408FC2;text-align:center;padding-bottom:86px;padding-top:86px;">Availble Everywhere.<br/>
-    <div class="col s4">.</div>
-    <div class="col s4" style="text-align:center;">
+    <div class="col s4" style="opacity:0;">.</div>
+    <div class="col s4" style="text-align:center;padding-bottom:1px;">
   	<input type="email" placeholder="ENTER YOUR EMAIL ADDRESS " id="subscribe"><button style="background-color:#408FC2; color:white;font-size:14px;border:none;padding:5px;">Subscribe to our newsletters</button> </div></div>
-<footer>
-	<div class="row" style="text-align:center;padding-top:40px;padding-bottom:20px;">
+
+	<div class="row" style="background-color:black;text-align:center;padding-top:20px;padding-bottom:10px;">
 	<div class="col s2" style="color:black;">.</div>
 		<div class="col s2">
 		<p style="color:white; font-size:14px;">Bolt</p>
@@ -342,8 +329,8 @@
 	</div>
 	 <p style="color:white; padding-bottom:1px; font-size:12px;padding-left:20px;padding-right:20px;">&#169;Copyright 2015<span style="float:right;">
   Designed By PeterMuturi. All Rights Reserved.</span></p>
-</footer>
-
+  </footer>
+<script type="text/javascript" src="ig/parse.js"></script>
 	<script type="text/javascript">
          
   $(document).ready(function(){
