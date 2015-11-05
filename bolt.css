@@ -7,10 +7,15 @@ li{
  a.sign{
  	color:#408FC2; border:solid 1px; padding:6px; padding-left:12px;padding-right:12px;font-size:12px;
  }
- a.sign:hover{
+ a.sign:hover, .sb:hover{
  	background-color:#408FC2;
  	color: white; 
- 	border: 0px;
+ 	border:solid 1px #408FC2;
+ }
+
+ .sb{
+ 	background:none;
+ 	color:#408FC2; border:solid 1px; padding:6px; padding-left:12px;padding-right:12px;font-size:12px;
  }
 
 ul li{
@@ -22,7 +27,14 @@ ul li{
 h4{
 	color: black;
 }
-
+.mk{
+	color:#408FC2;
+	font-size:14px;
+}
+.mk:hover{
+  text-decoration: underline;
+  color:white;
+}
 video { 
 	margin-top: -100px;
     position: fixed;

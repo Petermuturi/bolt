@@ -32,7 +32,7 @@
         <source src="bg/clip.mp4" type="video/mp4">
         <source src="bg/clip.ogv" type="video/ogg">
   </video>
-  <div style="background:rgba(0,0,0,0.8);padding-bottom:1px;height:500px;" id="polina">
+  <div style="background:rgba(0,0,0,0.7);padding-bottom:1px;height:600px;" id="polina">
 	<div class="row">
 	<div class="col s6" style="text-align:center;">	
 		<li><a href="#"><img src="img/logo.svg" style="height:80px; width:130px;"></a></li>
@@ -44,6 +44,7 @@
         <li><a style="color:white;font-size:12px;" id="in" class="cd-signin" href="#0">Sign in</a></li>
         <li><a class="cd-signup sign" id="up" href="#0">Sign up</a></li>
          <li><a class=" sign " id="logout" href="#0">Logout</a></li>
+         <li id="current-user" style="color:white"></li>
       </ul>
     </div>
 	</div>	
@@ -56,7 +57,7 @@
         <li><a href="#0">New account</a></li>
       </ul>
 
-      <div id="cd-logi"> <!-- log in form -->
+      <div id="cd-login"> <!-- log in form -->
            <form class="cd-form" id="login">
         <p class="fieldset">
             <label class="image-replace cd-username" for="login-username">Username</label>
@@ -132,11 +133,11 @@
       <a href="#0" class="cd-close-form">Close</a>
     </div> <!-- cd-user-modal-container -->
   </div> <!-- cd-user-modal -->
-	<p style="font-size:45px; font-weight:300; color:white;text-align:center;">Get your favorite movies, instantly.</p>
-        
-<div style="text-align:center;padding-bottom:240px;">
+	<p style="font-size:45px; font-weight:300; font-family:serif; color:white;text-align:center;">Get your favorite movies, instantly.</p>
+        <p style="font-size:25px; font-weight:200; font-family:serif; color:white;text-align:center;">Connect.Comment.Enjoy.</p>
+<div style="text-align:center;padding-bottom:180px;">
 
-  <button data-target="modal11" style="color:#408FC2;background:none;border:1px solid;font-size:12px;padding:5px;" class="modal-trigger sign">Learn More</button>
+  <button data-target="modal11" style="font-size:16px;" class="modal-trigger sb">Learn More</button>
 
   <!-- Modal Structure -->
   <div id="modal11" class="modal bottom-sheet">
@@ -166,47 +167,40 @@
       </div>
     </div>
   </div>
-      
-
+    
 </div>
 <!-- End of first div -->
 <div style="padding-top:16px;background-image: url(img/diagmonds_@2X.png);padding-bottom:12px;">
 	<p style="font-size:20px;color:#408FC2;text-align:center;padding-bottom:16px;">A world of movies at your fingertips.<br/>
-	<span style="font-size:13px;color:white;text-align:center;">Choose from the latest titles, with new movies added every day.</span></p>
+	<span style="font-size:14px;color:white;text-align:center;">Choose from the latest titles, with new movies added every day.</span></p>
 
+ <div class="row">
+    <div class=" col s8">
+      .
+    </div>
+    <div class="col s3" style="margin-top:20px;margin-bottom:-10px;">
+    <input style="border-left:1px solid white;color:white;margin-left:12px;" type="text" placeholder="Search by genre" class="quicksearch" />
+    </div> 
+</div>
+
+<div class="grid" style="margin-left:30px;margin-right:30px;">
 <div class="row">
-<div class="col s3 nl">.</div>
-<button data-target="modal1" class="modal-trigger"><img src="img/frozen.jpg" style="height:200px; width:200px;"></button>
+<div class="col s12 m4 l2 genre">
+<button data-target="modal1" class="modal-trigger"><img src="img/frozen.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal1" class="modal">
-    <div class="row modal-content">
+    <div class="modal-content">
       <h4>Frozen</h4>
-      <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+      <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a><span></span></p>
          <iframe width="690" height="315" src="https://www.youtube.com/embed/3EKpEVsyUXM?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
-         <div>
-           <h5>Comments</h5>
-           <form id="commentFreeze" class="row">
-           <div class="col s8">
-             <p> <input class="with-gap" name="group1" type="radio" id="likef"  />
-      <label for="likef"><i class="fa fa-thumbs-o-up"></i> Like</label> 
-       <input class="with-gap" name="group1" type="radio" id="dislikef"  />
-      <label for="dislikef"><i class="fa fa-thumbs-o-down"></i> Dislike</label></p>
-      <p>   <label for="textareaf"><i class="fa fa-comment-o"></i> Comment</label>
-       <textarea id="textareaf" placeholder="Type your comment" type="text" class="materialize-textarea"></textarea>
-           </p>
-           <p><input type="submit" class="sign" id="submitf"></p>
-           </div>
-           <div id="frzcom">
-             
-           </div>
-           </form>
-         </div>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
-  <button data-target="modal2" class="modal-trigger"><img src="img/the-avengers.jpg" style="height:200px; width:420px;"></button>
+  </div>
+  <div class="col s12 m4 l2 genre">
+  <button data-target="modal2" class="modal-trigger"><img src="img/the-avengers.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal2" class="modal">
     <div class="modal-content">
@@ -219,10 +213,8 @@
     </div>
   </div>
 </div>
-
-<div class="row">
-	<div class="col s3 nl">.</div>
-<button data-target="modal3" class="modal-trigger"><img src="img/iron-man.jpg" style="height:200px; width:200px;"></button>
+<div class="col s12 m4 l2 genre">
+<button data-target="modal3" class="modal-trigger"><img src="img/iron-man.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal3" class="modal">
     <div class="modal-content">
@@ -234,7 +226,9 @@
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
-<button data-target="modal4" class="modal-trigger"><img src="img/the-dark-knight.jpg" style="height:200px; width:200px;"></button>
+  </div>
+  <div class="col s12 m4 l2 genre">
+<button data-target="modal4" class="modal-trigger"><img src="img/the-dark-knight.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal4" class="modal">
     <div class="modal-content">
@@ -246,7 +240,9 @@
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
-<button data-target="modal5" class="modal-trigger"><img src="img/transformers.jpg" style="height:200px; width:200px;"></button>
+  </div>
+  <div class="col s12 m4 l2 genre">
+<button data-target="modal5" class="modal-trigger"><img src="img/transformers.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal5" class="modal">
     <div class="modal-content">
@@ -260,9 +256,8 @@
   </div>
 </div>
 
-<div class="row">
-	<div class="col s3 nl">.</div>
-	<button data-target="modal6" class="modal-trigger"><img src="img/skyfall.jpg" style="height:200px; width:420px;"></button>
+<div class="col s12 m4 l2 genre">
+	<button data-target="modal6" class="modal-trigger"><img src="img/skyfall.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal6" class="modal">
     <div class="modal-content">
@@ -274,8 +269,12 @@
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
-
-<button data-target="modal7" class="modal-trigger"><img src="img/pirates-of-the-caribbean.jpg" style="height:200px; width:200px;"></button>
+</div>
+</div>
+<!-- first row -->
+<div class="row">
+<div class="col s12 m4 l2 genre">
+<button data-target="modal7" class="modal-trigger"><img src="img/pirates-of-the-caribbean.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal7" class="modal">
     <div class="modal-content">
@@ -289,9 +288,8 @@
   </div>
 </div>
 
-<div class="row">
-	<div class="col s3 nl">.</div>
-<button data-target="modal8" class="modal-trigger"><img src="img/harry-potter.jpg" style="height:200px; width:200px;"></button>
+<div class="col s12 m4 l2 genre">
+<button data-target="modal8" class="modal-trigger"><img src="img/harry-potter.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal8" class="modal">
     <div class="modal-content">
@@ -303,7 +301,10 @@
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
-<button data-target="modal9" class="modal-trigger"><img src="img/the-lord-of-the-rings.jpg" style="height:200px; width:200px;"></button>
+</div>
+
+<div class="col s12 m4 l2 genre">
+<button data-target="modal9" class="modal-trigger"><img src="img/the-lord-of-the-rings.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal9" class="modal">
     <div class="modal-content">
@@ -315,7 +316,10 @@
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
-<button data-target="modal10" class="modal-trigger"><img src="img/toy-story-3.jpg" style="height:200px; width:200px;"></button>
+</div>
+
+<div class="col s12 m4 l2 genre">
+<button data-target="modal10" class="modal-trigger"><img src="img/toy-story-3.jpg" style="height:250px; width:200px;"></button>
 
   <div id="modal10" class="modal">
     <div class="modal-content">
@@ -327,45 +331,168 @@
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
+  </div>
+
+<div class="col s12 m4 l2 genre">
+<button data-target="modal12" class="modal-trigger"><img src="img/hangover-3.jpg" style="height:250px; width:200px;"></button>
+
+  <div id="modal12" class="modal">
+    <div class="modal-content">
+      <h4>Hangover 3</h4>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+    <iframe width="690" height="315" src="https://www.youtube.com/embed/KLAkxSjs8ZY?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  </div>
+
+<div class="col s12 m4 l2 genre">
+<button data-target="modal13" class="modal-trigger"><img src="img/insidious-3.jpg" style="height:250px; width:200px;"></button>
+
+  <div id="modal13" class="modal">
+    <div class="modal-content">
+      <h4>Insidious chapter 3</h4>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+    <iframe width="690" height="315" src="https://www.youtube.com/embed/7DNXUvHm-S8?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- second row -->
+<div class="row">
+<div class="col s12 m4 l2 genre">
+<button data-target="modal14" class="modal-trigger"><img src="img/scooby.jpg" style="height:250px; width:200px;"></button>
+
+  <div id="modal14" class="modal">
+    <div class="modal-content">
+      <h4>Scooby-doo: Franken Creepy</h4>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+      <iframe width="690" height="315" src="https://www.youtube.com/embed/r0IiUwRhS2g?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
 </div>
 
+<div class="col s12 m4 l2 genre">
+<button data-target="modal15" class="modal-trigger"><img src="img/exodus.jpg" style="height:250px; width:200px;"></button>
+
+  <div id="modal15" class="modal">
+    <div class="modal-content">
+      <h4>Exodus </h4>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+     <iframe width="690" height="315" src="https://www.youtube.com/embed/RhCzcde8__g?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+</div>
+
+<div class="col s12 m4 l2 genre">
+<button data-target="modal16" class="modal-trigger"><img src="img/under-the-dome.jpg" style="height:250px; width:200px;"></button>
+
+  <div id="modal16" class="modal">
+    <div class="modal-content">
+      <h4>Under the dome</h4>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+     <iframe width="690" height="315" src="https://www.youtube.com/embed/f_Y5YeYrqUk?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+</div>
+
+<div class="col s12 m4 l2 genre">
+<button data-target="modal17" class="modal-trigger"><img src="img/transporter-3.jpg" style="height:250px; width:200px;"></button>
+
+  <div id="modal17" class="modal">
+    <div class="modal-content">
+      <h4>Transporter 3</h4>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+    <iframe width="690" height="315" src="https://www.youtube.com/embed/1gtCoSNGSls?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  </div>
+
+<div class="col s12 m4 l2 genre">
+<button data-target="modal18" class="modal-trigger"><img src="img/sponge.jpeg" style="height:250px; width:200px;"></button>
+
+  <div id="modal18" class="modal">
+    <div class="modal-content">
+      <h4>Spongebob the movie</h4>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+    <iframe width="690" height="315" src="https://www.youtube.com/embed/4zoI4L4x1i0?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  </div>
+
+<div class="col s12 m4 l2 genre">
+<button data-target="modal19" class="modal-trigger"><img src="img/ghost.jpg" style="height:250px; width:200px;"></button>
+
+  <div id="modal19" class="modal">
+    <div class="modal-content">
+      <h4>Mission Impossible</h4>
+        <p>Seller: <i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Ngong+Rd,+Nairobi,+Kenya/@-1.3076419,36.7325067,17z/data=!3m1!4b1!4m2!3m1!1s0x182f1baa2ed8ec2d:0x62fd05a674f1b73e">Ngong Rd, Nairobi, Kenya</a> | <i class="fa fa-phone"></i> +254722646285 | <i class="fa fa-envelope"></i> <a href="gmail.com" mailto="pmuturi65@gmail.com">pmuturi65@gmail.com</a></p>
+    <iframe width="690" height="315" src="https://www.youtube.com/embed/EDGYVFZxsXQ?rel=0&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  </div>
+</div>
 </div>
 
 <footer style="background:black;">
-  	<div class="row" style="background-image:url(img/feature.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;font-size:20px;color:#408FC2;text-align:center;padding-bottom:86px;padding-top:86px;">Availble Everywhere.<br/>
+  	<div class="row" style="background-image:url(img/feature.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;font-size:20px;color:#408FC2;text-align:center;padding-bottom:86px;padding-top:86px;">Available Everywhere.<br/>
     <div class="col s4" style="opacity:0;">.</div>
     <div class="col s4" style="text-align:center;padding-bottom:1px;">
-  	<input type="email" placeholder="ENTER YOUR EMAIL ADDRESS " id="subscribe"><button style="background-color:#408FC2; color:white;font-size:14px;border:none;padding:5px;">Subscribe to our newsletters</button> </div></div>
+  	<input type="email" placeholder="ENTER YOUR EMAIL ADDRESS " id="subscribe"><button class="sb">Subscribe to our newsletters</button> </div></div>
 
-	<div class="row" style="background-color:black;text-align:center;padding-top:20px;padding-bottom:10px;">
+	<div class="row" style="background-color:black;padding-top:20px;padding-bottom:10px;">
 	<div class="col s2" style="color:black;">.</div>
 		<div class="col s2">
-		<p style="color:white; font-size:14px;">Bolt</p>
-			<ul style="color:#408FC2;font-size:10px;">
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">Careers</a></li>
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">Terms</a></li>
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">Help</a></li>
+		<p style="color:white; font-size:18px;">Bolt</p>
+			<ul>
+				<li><a class="mk" href="#">Careers</a></li>
+				<li><a class="mk" href="#">Terms</a></li>
+				<li><a class="mk" href="#">Help</a></li>
 			</ul>
 		</div>
 		<div class="col s2">
-		<p style="color:white; font-size:14px;">More Bolt</p>
-			<ul style="color:#408FC2;font-size:10px;">
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">Gift Cards</a></li>
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">Trailers</a></li>
+		<p style="color:white; font-size:18px;">More Bolt</p>
+			<ul>
+				<li><a class="mk" href="#">Gift Cards</a></li>
+				<li><a class="mk" href="#">Trailers</a></li>
+        <li><a class="mk" href="#">Sell</a></li>
 			</ul>
 		</div>
 		<div class="col s2">
-		<p style="color:white; font-size:14px;">News</p>
-			<ul style="color:#408FC2;font-size:10px;">
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">Blog</a></li>
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">Twitter</a></li>
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">YouTube</a></li>
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">Google+</a></li>
-				<li><a style="color:#408FC2;font-size:12px; text-decoration:underline;" href="#">FaceBook</a></li>
+		<p style="color:white; font-size:18px;">News</p>
+			<ul>
+				<li><a class="mk" href="#">Blog</a></li>
+				<li><a class="mk" href="#">Twitter</a></li>
+				<li><a class="mk" href="#">YouTube</a></li>
+				<li><a class="mk" href="#">Google+</a></li>
+				<li><a class="mk" href="#">FaceBook</a></li>
 			</ul>
 		</div>
 	</div>
-	 <p style="color:white; padding-bottom:1px; font-size:12px;padding-left:20px;padding-right:20px;">&#169;Copyright 2015<span style="float:right;">
+	 <p style="color:white; padding-bottom:20px; font-size:12px;padding-left:20px;padding-right:20px;">&#169;Copyright 2015<span style="float:right;">
   Designed By PeterMuturi. All Rights Reserved.</span></p>
   </footer>
 <script type="text/javascript" src="ig/parse.js"></script>
