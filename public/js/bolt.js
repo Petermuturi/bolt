@@ -32,5 +32,5 @@ function debounce(fn, threshold) {
       timeout = null;
     }
     timeout = setTimeout(delayed, threshold || 100);
-  }
+  };
 }

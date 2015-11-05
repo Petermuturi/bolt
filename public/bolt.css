@@ -17,11 +17,17 @@ li{
  	background:none;
  	color:#408FC2; border:solid 1px; padding:6px; padding-left:12px;padding-right:12px;font-size:12px;
  }
+.name{
+	display: none;
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
- .genre {
-  position: relative;
-  float: left;
- }
+
 
 ul li{
 	display: block;
@@ -59,6 +65,7 @@ video {
 
 @media screen and (max-width: 500px) { 
   img{width:70%;} 
+  .mi{display: none;}
 }
 @media screen and (max-device-width: 800px) {
   html { background: url(bg/bg.jpg) no-repeat center center fixed; }
