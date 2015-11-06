@@ -8,7 +8,6 @@ $("#logout").hide();
         $("#up").hide();
    		$("#current-user").html( Parse.User.current().get("username"));
    	}else{
-
    	}   	
    }
    checkLogin();
@@ -33,9 +32,11 @@ $("#logout").hide();
            $("#logout").show();
         $("#in").hide();
         $("#up").hide();
+        $(".load").hide();
      	},
      	error:function(user, error){
            alert("Something went wrong. You weren't signed up\n"+error.message);
+           $(".load").hide();
      	}
      });  
 
@@ -55,9 +56,11 @@ $("#logout").hide();
         $("#logout").show();
         $("#in").hide();
         $("#up").hide();
+        $(".load").hide();
   	},
       error:function(){
         alert("Incorrect username or password");
+        $(".load").hide();
       }
   });
 
